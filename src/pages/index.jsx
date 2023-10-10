@@ -9,7 +9,7 @@ function Index() {
     const [oldNota, setOldNota] = useState([]) 
     /* Esta es la peticion a la db para recuperar toda la data */
     const getNotas = async() => {
-        const response = await fetch('http://localhost:5000/api/notas')
+        const response = await fetch('http://168.227.245.2/api/notas/')
         const result = await response.json()
         setNotas(result)
     }
@@ -18,14 +18,14 @@ function Index() {
     },[notas])
 /* Esta es la función para eliminar las notas */
     const deleteNota = async(id) => { //Selecciono el id de la nota
-        await fetch('http://localhost:5000/api/notas/'+id, {
+        await fetch('http://168.227.245.2/api/notas/'+id, {
             method: 'DELETE',
             mode: 'cors'
         })
     }
     /* Función para editar una nota existente */
     const getNota = async(id) =>{
-        const nota = await fetch('http://localhost:5000/api/notas/'+id)
+        const nota = await fetch('http://168.227.245.2/api/notas/'+id)
         const result = await nota.json()
         setOldNota(result)
     }

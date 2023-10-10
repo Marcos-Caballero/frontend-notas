@@ -16,7 +16,7 @@ function Form({oldNota}) {
         let URL = ''
         let params = {}
         if(nota._id){
-            URL = 'http://localhost:5000/api/notas/' + nota._id;
+            URL = 'http://168.227.245.2/api/notas/' + nota._id;
             params = {
                 method: 'PATCH',
                 body: JSON.stringify(nota),
@@ -25,7 +25,7 @@ function Form({oldNota}) {
                 }
             }
         }else{
-            URL = 'http://localhost:5000/api/notas/'
+            URL = 'http://168.227.245.2/api/notas/'
             params = {
                 method: 'POST',
                 body: JSON.stringify(nota),
