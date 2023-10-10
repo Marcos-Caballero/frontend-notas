@@ -46,7 +46,7 @@ function Form({oldNota}) {
     }
 /* Aqui detecta si se hace una peticion de edición de notas */
     useEffect(()=>{
-        setNota({...nota, ...oldNota})
+        setNota((prevNota) => ({ ...prevNota, ...oldNota}));
         console.log(nota)
     },[oldNota])
 
