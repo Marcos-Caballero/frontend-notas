@@ -25,7 +25,7 @@ function Form({oldNota}) {
                 }
             }
         }else{
-            URL = 'https://backend-notas-2g3dhhl6b-maicol-caballeros-projects.vercel.app/notas/'
+            URL = 'https://backend-notas-2g3dhhl6b-maicol-caballeros-projects.vercel.app/api/notas/'
             params = {
                 method: 'POST',
                 body: JSON.stringify(nota),

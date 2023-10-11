@@ -9,7 +9,7 @@ function Index() {
     const [oldNota, setOldNota] = useState([]) 
     /* Esta es la peticion a la db para recuperar toda la data */
     const getNotas = async() => {
-        const response = await fetch('https://backend-notas-2g3dhhl6b-maicol-caballeros-projects.vercel.app//api/notas/')
+        const response = await fetch('https://backend-notas-2g3dhhl6b-maicol-caballeros-projects.vercel.app/api/notas/')
         const result = await response.json()
         setNotas(result)
     }
