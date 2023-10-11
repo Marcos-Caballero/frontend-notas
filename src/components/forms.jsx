@@ -16,7 +16,7 @@ function Form({oldNota}) {
         let URL = ''
         let params = {}
         if(nota._id){
-            URL = 'https://backend-notas-aw1iq8dqu-maicol-caballeros-projects.vercel.app/api/notas/' + nota._id;
+            URL = 'https://backend-notas-2g3dhhl6b-maicol-caballeros-projects.vercel.app/api/notas/' + nota._id;
             params = {
                 method: 'PATCH',
                 body: JSON.stringify(nota),
@@ -25,7 +25,7 @@ function Form({oldNota}) {
                 }
             }
         }else{
-            URL = 'https://backend-notas-aw1iq8dqu-maicol-caballeros-projects.vercel.app/api/notas/'
+            URL = 'https://backend-notas-2g3dhhl6b-maicol-caballeros-projects.vercel.app/notas/'
             params = {
                 method: 'POST',
                 body: JSON.stringify(nota),
